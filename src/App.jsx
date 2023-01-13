@@ -1,8 +1,10 @@
+import Counter from './Counter'
+import './Styles.css'
 function App() {
 
   return (
-    <div >
-      Hello world
+    <div>
+      <Counter />
     </div>
   )
 }
