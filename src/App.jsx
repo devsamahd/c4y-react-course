@@ -1,10 +1,12 @@
-import Counter from './Counter'
+import PostList from './PostList'
 import './Styles.css'
+import 'bootstrap/dist/css/bootstrap.css'
+import Nav from './Nav'
 function App() {
-
   return (
     <div>
-      <Counter />
+      <Nav />
+      <PostList />
     </div>
   )
 }
