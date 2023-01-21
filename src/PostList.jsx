@@ -1,18 +1,8 @@
-import { useEffect, useState } from "react"
+import { useContext } from "react"
+import { PostsContext } from "../context/postsContext"
 
-const PostList = () => {
-    const [posts, setPosts] = useState([])
-    useEffect(()=>{
-        (async()=>{
-            try{
-               const data = await fetch('http://localhost:300/posts')
-               const res = await data.json()
-               setPosts(res) 
-            }catch(e){
-                console.log(e)
-            }   
-        })()
-    },[])
+const PostList = () => {  
+    const {posts, myName} = useContext(PostsContext)
   return (
     <>
     <div className="container">
@@ -22,6 +12,7 @@ const PostList = () => {
         <div className="card p-2" key={key}>
             <div className="card-title"><h3>{post.title}</h3></div>
             <div className="card-body">{post.body}</div>
+            <p>Author: {myName}</p>
         </div>
         </div>
     ))}
