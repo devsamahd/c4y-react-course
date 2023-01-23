@@ -6,7 +6,7 @@ import Cursor from './Cursor'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import AboutUs from './AboutUs'
 
-function App() {
+function App() { 
   
   return (
       <Router>
