@@ -1,8 +1,8 @@
-import PostList from './PostList'
+import PostList from './components/PostList'
 import './Styles.css'
 import 'bootstrap/dist/css/bootstrap.css'
-import Nav from './Nav'
-import Cursor from './Cursor'
+import Nav from './components/Nav'
+import Cursor from './components/Cursor'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import AboutUs from './AboutUs'
 

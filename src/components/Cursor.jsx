@@ -1,5 +1,5 @@
 import React from 'react'
-import useMousePosition from '../hooks/useMousePos'
+import useMousePosition from '../../hooks/useMousePos'
 
 const Cursor = () => {
     const {x,y} = useMousePosition()

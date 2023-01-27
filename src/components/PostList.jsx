@@ -1,5 +1,5 @@
 import { useContext } from "react"
-import { PostsContext } from "../context/postsContext"
+import { PostsContext } from "../../context/postsContext"
 
 const PostList = () => {  
     const {posts, myName} = useContext(PostsContext)
@@ -11,8 +11,8 @@ const PostList = () => {
         <div className="col-md-4">
         <div className="card p-2" key={key}>
             <div className="card-title"><h3>{post.title}</h3></div>
-            <div className="card-body">{post.body}</div>
-            <p>Author: {myName}</p>
+            <div className="card-body">{post.desc}</div>
+            <p>Author: {post.author}</p>
         </div>
         </div>
     ))}
