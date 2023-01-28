@@ -1,0 +1,17 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.space-evenly{
+    justify-content: space-between;
+}
+.nav-items{
+    padding-right: 20px;
+}
+.ni{
+    padding-right: 20px;
+}
+.list-group-item{
+    justify-content: space-between;
+}
