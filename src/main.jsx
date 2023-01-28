@@ -5,8 +5,6 @@ import PostsProvider from '../context/postsContext'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <PostsProvider>
       <App />
-    </PostsProvider>
   </React.StrictMode>,
 )
